@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us - United University</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <nav>
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="materials.html">Study Materials</a></li>
+            <li><a href="contact.html">Contact Us</a></li>
+        </ul>
+    </nav>
+
+    <div class="contact-container">
+        <h2>Contact United University</h2>
+        
+        <!-- Contact Form -->
+        <form id="contactForm" class="contact-form" action="https://www.formbackend.com/f/2090050a3bce2d75" method="POST">
+            <input type="text" name="name" placeholder="Your Name" required>
+            <input type="email" name="email" placeholder="Your Email" required>
+            <textarea name="message" rows="5" placeholder="Your Message" required></textarea>
+            <button type="submit">Send Message</button>
+        </form>
+
+        <!-- Popup for Success Message -->
+        <div id="successPopup" class="popup">
+            <div class="popup-content">
+                <span class="close-popup">&times;</span>
+                <div id="loadingSpinner" class="loading-spinner"></div>
+                <p id="successMessage" style="display: none;">
+                    Thank you! Your response has been submitted successfully.
+                    <br>
+                    We will respond as soon as possible.
+                </p>
+            </div>
+        </div>
+
+        <div class="contact-info">
+            <h3>Reach Us At</h3>
+            <p>Address: Rawatpur, Jhalwa, Prayagraj, Uttar Pradesh 211004</p>
+            <p>Email: materials.uu@gmail.com</p>
+            <p>Phone: +91 8887869179</p>
+        </div>
+    </div>
+
+    <footer>
+        <p>© 2023 United University, Prayagraj. All rights reserved.</p>
+    </footer>
+
+    <script src="scripts.js"></script>
+</body>
+</html>
