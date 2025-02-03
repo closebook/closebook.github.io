@@ -52,6 +52,27 @@ document.addEventListener("DOMContentLoaded", function () {
     });
 });
 
+// scripts.js
+
+document.addEventListener("DOMContentLoaded", function () {
+    const hamburger = document.getElementById("hamburger");
+    const navLinks = document.getElementById("nav-links");
+
+    // Toggle mobile menu
+    hamburger.addEventListener("click", function () {
+        hamburger.classList.toggle("active");
+        navLinks.classList.toggle("active");
+    });
+
+    // Close mobile menu when a link is clicked
+    navLinks.querySelectorAll("a").forEach((link) => {
+        link.addEventListener("click", function () {
+            hamburger.classList.remove("active");
+            navLinks.classList.remove("active");
+        });
+    });
+});
+
 fetch("https://www.formbackend.com/f/2090050a3bce2d75", {
     method: "POST",
     body: formData,
