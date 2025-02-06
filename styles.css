@@ -287,6 +287,14 @@ button {
     cursor: pointer;
     font-size: 1rem;
 }
+h5{
+    font-weight: 700;
+}
+code{
+    font-family: monospace;
+    font-weight: 600;
+    color: rgb(201, 0, 0);
+}
 
 .contact-info {
     margin-top: 2rem;
