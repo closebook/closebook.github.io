@@ -252,8 +252,15 @@ nav ul li a {
 
 
 /* Contact Page Styles */
+
+@media (max-width: 768px) {
+    html, body{
+        display: block;
+    }
+    
+}
 .contact-container {
-    max-width: 800px;
+    max-width: 600px;
     margin: 4rem auto;
     padding: 2rem;
     background: white;
