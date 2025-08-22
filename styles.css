@@ -97,7 +97,7 @@ nav ul li a {
     .nav-links {
         display: none; /* Hide nav links by default on mobile */
         flex-direction: column;
-        background-color: #1a365d;
+        background-color: #000000;
         position: absolute;
         top: 100%;
         left: 0;
