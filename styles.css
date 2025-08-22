@@ -11,18 +11,19 @@ html, body{
     flex-direction: column;
 }
 body {
-    background-color: #f0f4f8;
+    background-color: #000000;
 }
 .main{
     flex: 1;
 }
 
 nav {
-    background-color: #1a365d;
+    background-color: #000000;
     padding: 1rem;
     position: sticky;
-    top: 0;
-    z-index: 1000;
+    min-height: 50%;
+    align-content: center;
+    text-align: center;
 }
 
 nav ul {
@@ -44,22 +45,27 @@ nav ul li a {
 
 .nav-container {
     display: flex;
-    justify-content: space-between;
+    justify-content: space-around;
     align-items: center;
     max-width: 1200px;
     margin: 0 auto;
 }
 
 .nav-links {
+    align-items: center;
     display: flex;
+    flex-direction: column;
     list-style: none;
     gap: 2rem;
 }
 
+
 .nav-links li a {
+    text-shadow: 0 0 5px red;
+    font-family: "Rubik Distressed";
     color: white;
     text-decoration: none;
-    font-size: 1.1rem;
+    font-size:xx-large;
     transition: color 0.3s ease;
 }
 
