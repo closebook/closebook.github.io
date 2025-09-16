@@ -11,19 +11,18 @@ html, body{
     flex-direction: column;
 }
 body {
-    background-color: #000000;
+    background-color: #f0f4f8;
 }
 .main{
     flex: 1;
 }
 
 nav {
-    background-color: #000000;
+    background-color: #1a365d;
     padding: 1rem;
     position: sticky;
-    min-height: 50%;
-    align-content: center;
-    text-align: center;
+    top: 0;
+    z-index: 1000;
 }
 
 nav ul {
@@ -45,32 +44,27 @@ nav ul li a {
 
 .nav-container {
     display: flex;
-    justify-content: space-around;
+    justify-content: space-between;
     align-items: center;
     max-width: 1200px;
     margin: 0 auto;
 }
 
 .nav-links {
-    align-items: center;
     display: flex;
-    flex-direction: column;
     list-style: none;
     gap: 2rem;
 }
 
-
 .nav-links li a {
-    text-shadow: 0 0 5px red;
-    font-family: "Rubik Distressed";
     color: white;
     text-decoration: none;
-    font-size:xx-large;
+    font-size: 1.1rem;
     transition: color 0.3s ease;
 }
 
 .nav-links li a:hover {
-    color: #999706;
+    color: #2b6cb0;
 }
 
 /* Hamburger Menu */
@@ -97,7 +91,7 @@ nav ul li a {
     .nav-links {
         display: none; /* Hide nav links by default on mobile */
         flex-direction: column;
-        background-color: #000000;
+        background-color: #1a365d;
         position: absolute;
         top: 100%;
         left: 0;
