@@ -95,14 +95,41 @@ footer {
 /* ---------------- Contact Page ---------------- */
 
 /* Contact Container */
+/* Contact Container */
 .contact-container {
   max-width: 700px;
+  width: 95%;              /* make it scale on smaller devices */
   margin: 3rem auto;
-  padding: 2rem;
+  padding: 1.5rem;         /* reduce padding for mobile */
   background: #1e293b;
   border-radius: 12px;
   box-shadow: 0 4px 20px rgba(0, 0, 0, 0.6);
   text-align: left;
+  box-sizing: border-box;  /* ensure padding doesn’t add extra width */
+}
+
+/* Responsive Fix */
+@media (max-width: 600px) {
+  .contact-container {
+    margin: 1.5rem auto;
+    padding: 1rem;
+    width: 90%;           /* slightly smaller width for mobiles */
+  }
+
+  .contact-container h2 {
+    font-size: 1.6rem;
+  }
+
+  .contact-form input,
+  .contact-form textarea {
+    font-size: 0.95rem;
+    padding: 0.7rem;
+  }
+
+  .contact-form button {
+    font-size: 1rem;
+    padding: 0.8rem;
+  }
 }
 
 .contact-container h2 {
